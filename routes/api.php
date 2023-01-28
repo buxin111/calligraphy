@@ -16,6 +16,7 @@ use App\Http\Controllers\Api\RegionController;
 */
 
 Route::post('/login', [\App\Http\Controllers\Api\LoginController::class, 'authenticate']);
+Route::post('/register', [\App\Http\Controllers\Api\LoginController::class, 'register']);
 
 // 用户模块
 Route::middleware('auth:api')->prefix('user')->group(function () {
