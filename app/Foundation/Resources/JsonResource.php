@@ -9,7 +9,7 @@ use App\Foundation\Resources\Json\AnonymousResourceCollection;
 
 /**
  * API 资源 基类
- * @author wangzh
+ * @author bzxx
  * @date 2022-01-26
  * @package App\Foundation\Resources
  */
@@ -31,7 +31,7 @@ class JsonResource extends \Illuminate\Http\Resources\Json\JsonResource
 
     /**
      * 设置 code 码
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @param int $code
      * @return $this
@@ -45,7 +45,7 @@ class JsonResource extends \Illuminate\Http\Resources\Json\JsonResource
 
     /**
      * 设置 msg
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @param string $msg
      * @return $this
@@ -59,7 +59,7 @@ class JsonResource extends \Illuminate\Http\Resources\Json\JsonResource
 
 
     /**
-     * @author wangzh
+     * @author bzxx
      * @date 2022-02-28
      * @param string $errors
      * @return $this
@@ -99,7 +99,7 @@ class JsonResource extends \Illuminate\Http\Resources\Json\JsonResource
 
     /**
      * 当是 ArrayObject 的时候需要特殊处理
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @param \Illuminate\Http\Request $request
      * @return array|\ArrayObject|Arrayable|JsonSerializable|mixed

@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth as AuthFacades;
 
 /**
  * Class Auth
- * @author wangzh
+ * @author bzxx
  * @date 2022-02-24
  * @package App\Foundation\Support
  *
@@ -16,7 +16,7 @@ class Auth
 {
     /**
      * Func __callStatic
-     * @author wangzh
+     * @author bzxx
      * @date 2022-02-24
      * @param $method
      * @param $parameters

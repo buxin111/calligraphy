@@ -3,7 +3,7 @@
 namespace App\Foundation\Resources\Json;
 
 /**
- * @author wangzh
+ * @author bzxx
  * @date 2022-02-28
  * @package App\Foundation\Resources\Json
  */

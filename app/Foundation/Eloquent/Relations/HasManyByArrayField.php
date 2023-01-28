@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * 一对多的时候，默认生成的是      $query->where($this->foreignKey, '=', $this->getParentKey());
  * 当字段是 数组的时候 应该得生成  $query->whereIn($this->foreignKey, $this->getParentKey());
- * @author wangzh
+ * @author bzxx
  * @date 2022-03-16
  * @package App\Foundation\Eloquent\Relations
  */

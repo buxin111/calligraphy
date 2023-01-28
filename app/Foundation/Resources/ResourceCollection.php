@@ -6,7 +6,7 @@ use App\Foundation\Resources\Json\PaginatedResourceResponse;
 
 /**
  * API 资源集合 基类
- * @author wangzh
+ * @author bzxx
  * @date 2022-01-26
  * @package App\Foundation\Resources
  */
@@ -22,7 +22,7 @@ class ResourceCollection extends \Illuminate\Http\Resources\Json\ResourceCollect
 
     /**
      * 设置 code 码
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @param integer $code
      * @return $this
@@ -36,7 +36,7 @@ class ResourceCollection extends \Illuminate\Http\Resources\Json\ResourceCollect
 
     /**
      * 设置 msg
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @param string $msg
      * @return $this

@@ -10,7 +10,7 @@ use App\Foundation\Resources\JsonResource;
  *      关于操作码 code 设计思想:
  *          成功状态只有一种，失败状态可能有很多种。所以 0 为操作成功 其余为 操作失败， 具体的失败错误码，可以自行定义！
  *
- * @author wangzh
+ * @author bzxx
  * @date 2022-01-26
  * @package App\Foundation\Support
  */
@@ -22,7 +22,7 @@ class Response
 
     /**
      * @desc 当你想要自定义返回结果的时候非常有用
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @param array| \ArrayObject $data
      * @return JsonResource
@@ -35,7 +35,7 @@ class Response
 
     /**
      * 返回成功并附带信息
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @param array|\ArrayObject $data
      * @param string $msg
@@ -49,7 +49,7 @@ class Response
 
     /**
      * 返回失败并附带信息
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @param string $msg
      * @param array|\ArrayObject $data

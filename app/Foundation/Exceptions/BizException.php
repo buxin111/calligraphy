@@ -7,7 +7,7 @@ use App\Foundation\Support\Response;
 
 /**
  * 业务 Exception 基类
- * @author wangzh
+ * @author bzxx
  * @date 2022-01-26
  * @package App\Foundation\Exceptions
  */
@@ -33,7 +33,7 @@ class BizException extends \Exception implements BizDontReportExceptionsInterfac
 
     /**
      * 返回数据
-     * @author wangzh
+     * @author bzxx
      * @date 2022-01-26
      * @return \Illuminate\Http\JsonResponse
      */

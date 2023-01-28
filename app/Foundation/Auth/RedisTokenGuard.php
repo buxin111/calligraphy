@@ -14,7 +14,7 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
  * @desc 请求头中增加 $inputKey ，取出来然后 从 redis中读取 $redisKey , $redisKey 存储的是 数据表中的 唯一标识(主键编号) 通过唯一标识去获取登录用户信息
  *      $inputKey :   x-api-token
  *      $redisKey :   key => clixgo_custom_token:4c16ab0fcf7805cd73371fd730e08d27  value=> 121
- * @author wangzh
+ * @author bzxx
  * @date 2021-09-17
  * @package App\Foundation\Auth
  */
@@ -91,7 +91,7 @@ class RedisTokenGuard extends TokenGuard
 
     /**
      * 获取存储的 value
-     * @author wangzh
+     * @author bzxx
      * @date 2021-09-17
      * @param $token
      * @return mixed
@@ -106,7 +106,7 @@ class RedisTokenGuard extends TokenGuard
     /**
      * Get the token for the current request.
      *
-     * @author wangzh
+     * @author bzxx
      * @date 2021-09-17
      * @return string
      */
@@ -122,7 +122,7 @@ class RedisTokenGuard extends TokenGuard
 
     /**
      * 生成一个token
-     * @author wangzh
+     * @author bzxx
      * @date 2021-09-17
      * @param string $name
      * @return string
@@ -136,7 +136,7 @@ class RedisTokenGuard extends TokenGuard
 
     /**
      * 登录
-     * @author wangzh
+     * @author bzxx
      * @date 2021-09-17
      * @param AuthenticatableContract $user 登录用户
      * @param integer|null $expire 过期时间
