@@ -18,19 +18,25 @@ class LoginController extends ApiController
 {
     /**
      * 登录
-     * @author buxin
-     * @date 2022-04-06
+     * @author bzxx
+     * @date 2023-01-28
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function authenticate(Request $request)
     {
-        $credentials = $request->only('mobile', 'password');
+        $credentials = $request->only('name', 'id_card');
+
+        $user = User::query()->where($credentials)->first();
+
+        if (is_null($user)){
+            return Response::failedWithData('用户或身份证号错误', ['token' => '']);
+        }
 
         /***
          * @see \App\Foundation\Auth\RedisTokenGuard::login
          */
-        if ($token = Auth::guard('api')->attempt($credentials)) {
+        if ($token = Auth::guard('api')->login($user)) {
             // 认证通过．．．
             return Response::successWithData(['token' => $token], '登录成功');
         }
