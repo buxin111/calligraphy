@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Requests\RegisterRequest;
 use App\Models\User;
 use App\Foundation\Support\Response;
 
@@ -42,5 +43,11 @@ class LoginController extends ApiController
         }
 
         return Response::failedWithData('登录失败，请稍后重试!', ['token' => '']);
+    }
+
+
+    public function register(RegisterRequest $request)
+    {
+
     }
 }
